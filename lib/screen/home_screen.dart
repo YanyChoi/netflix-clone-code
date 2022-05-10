@@ -1,4 +1,5 @@
 import 'package:first_flutter/model/model_movie.dart';
+import 'package:first_flutter/widget/box_slider.dart';
 import 'package:first_flutter/widget/carousel_slider.dart';
 import 'package:first_flutter/widget/circle_slider.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,15 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Movie> movies = [
     Movie.fromMap(
       {
-        'title': '사랑의 불시착',
+        'title': '사랑의 불시착1',
+        'keyword': '사랑/로맨스/판타지',
+        'poster': 'test_movie_1.png',
+        'like': true,
+      },
+    ),
+    Movie.fromMap(
+      {
+        'title': '사랑의 불시착2',
         'keyword': '사랑/로맨스/판타지',
         'poster': 'test_movie_1.png',
         'like': false,
@@ -19,23 +28,15 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Movie.fromMap(
       {
-        'title': '사랑의 불시착',
+        'title': '사랑의 불시착3',
         'keyword': '사랑/로맨스/판타지',
         'poster': 'test_movie_1.png',
-        'like': false,
+        'like': true,
       },
     ),
     Movie.fromMap(
       {
-        'title': '사랑의 불시착',
-        'keyword': '사랑/로맨스/판타지',
-        'poster': 'test_movie_1.png',
-        'like': false,
-      },
-    ),
-    Movie.fromMap(
-      {
-        'title': '사랑의 불시착',
+        'title': '사랑의 불시착4',
         'keyword': '사랑/로맨스/판타지',
         'poster': 'test_movie_1.png',
         'like': false,
@@ -55,6 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
         TopBar(),
       ],),
       CircleSlider(movies: movies,),
+      BoxSlider(movies: movies,),
     ]);
   }
 }

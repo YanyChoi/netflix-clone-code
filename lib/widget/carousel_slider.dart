@@ -1,4 +1,5 @@
 import 'package:first_flutter/model/model_movie.dart';
+import 'package:first_flutter/screen/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -98,7 +99,15 @@ class _CarouselImageState extends State<CarouselImage> {
                   child: Column(children: <Widget>[
                     IconButton(
                       icon: Icon(Icons.info),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute<Null>(
+                            fullscreenDialog: true,
+                            builder: (BuildContext context) {
+                              return DetailScreen(
+                                movie: movies[_currentPage],
+                              );
+                            }));
+                      },
                     ),
                     Text(
                       '정보',
@@ -117,7 +126,7 @@ class _CarouselImageState extends State<CarouselImage> {
     );
   }
 }
- 
+
 List<Widget> makeIndicator(List list, int _currentPage) {
   List<Widget> results = [];
   for (var i = 0; i < list.length; i++) {
