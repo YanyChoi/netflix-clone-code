@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1038557352106",
+    "project_id": "netflix-clone-test-fc74c",
+    "storage_bucket": "netflix-clone-test-fc74c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038557352106:android:2a79b763a91958425680d3",
+        "android_client_info": {
+          "package_name": "com.yanychoi.firstflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038557352106-iq1pflus8dpgg55e7rpcgtdfuc5nnk1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtedBZP6chQc28kjbmJNFyB6RBLBws0gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038557352106-iq1pflus8dpgg55e7rpcgtdfuc5nnk1c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1038557352106-2t6bm8b3uvd77kg81b6ad5d5u7j9ve1v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yanychoi.firstflutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
